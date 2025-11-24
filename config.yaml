@@ -1,0 +1,20 @@
+server:
+  addr: ":8080"
+  presign_expire_seconds: 10
+  public_bucket_policy: false
+recorder:
+  ffmpeg_path: "ffmpeg"
+#  rtsp_url: "rtsp://192.168.137.65:8554/live"
+  rtsp_url: "rtsp://localhost:8554/mystream"
+  output_dir: "data"
+  segment_seconds: 10
+minio:
+  endpoint: "www.serein.com:9100"
+  access_key: "minio_tyaBYX"
+  secret_key: "minio_RW4Wsj"
+  bucket: "camrec"
+  use_ssl: false
+  region: "us-east-1"
+postgres:
+  dsn: "postgres://user_D27Hrf:password_Rh7CzX@www.serein.com:5432/camrec?sslmode=disable"
+

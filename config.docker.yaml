@@ -1,0 +1,19 @@
+server:
+  addr: ":8080"
+  presign_expire_seconds: 3600
+  public_bucket_policy: false
+recorder:
+  ffmpeg_path: "ffmpeg"
+  rtsp_url: "rtsp://192.168.137.65:8554/live"
+  output_dir: "/var/lib/camrec"
+  segment_seconds: 600
+minio:
+  endpoint: "minio:9000"
+  access_key: "minioadmin"
+  secret_key: "minioadmin"
+  bucket: "camrec"
+  use_ssl: false
+  region: "us-east-1"
+postgres:
+  dsn: "postgres://postgres:postgres@postgres:5432/camrec?sslmode=disable"
+
