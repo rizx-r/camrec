@@ -101,3 +101,4 @@ bash deploy.sh
 - 选项：一键部署 / 仅部署 camrec
 
 
+一键部署docker容器包： https://drive.rizxcloud.dpdns.org/cn-bytedance/MyDepository/docker-container-oneclick
