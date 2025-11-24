@@ -2,6 +2,8 @@
 
 docs目录里有api文档
 
+推荐单独部署
+
 CamRec 是一个使用 Go 开发的服务端应用，负责从 RTSP 拉流，按固定时长（默认 10 分钟）分段录制，通过 MinIO 存储视频片段，并将元数据记录到 PostgreSQL；同时提供查询视频 URL 的 HTTP API。
 
 ## 特性
